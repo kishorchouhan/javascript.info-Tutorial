@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="vieport" content="width=device-width, initial-scale=1">
+        <title>Check the login</title>
+    </head>
+    <body>
+        <script>
+            let userType = prompt("Who's there?", "");
+            
+            if (userType == "Admin") {
+                let inputPassword = prompt("Password?", "");
+                
+                if (inputPassword == "TheMaster") {
+                    alert("Welcome!");
+                } else if ((inputPassword == "") || (inputPassword == null)) {
+                    alert("Canceled");
+                } else {
+                    alert("Wrong password");
+                }
+            } else if ((userType == "") || (userType == null)) {
+                alert("Canceled");
+            } else {
+                alert("I don’t know you");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="vieport" content="width=device-width, initial-scale=1">
+        <title>Check the range outside</title>
+    </head>
+    <body>
+        <script>
+            let age = prompt("enter age", "");
+            if(!((age >= 14) && (age <= 90))){
+                alert("age is not between 14 and 90 inclusively.");
+            };
+            let age2 = prompt("enter age", "");
+            if((age2 < 14) || (age2 > 90)){
+                alert("age is not between 14 and 90 inclusively.");
+            }
+        </script>
+    </body>
+</html>
